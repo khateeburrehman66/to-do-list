@@ -115,9 +115,9 @@
             background: #edeef0;
             /* padding: 5px; */
         }
-        marquee{
+/*         marquee{
             position: relative;
-        }
+        } */
         </style>
     </head>
     <body>
@@ -142,10 +142,13 @@
     const listcontainer = document.getElementById("list-container");
 //     let marqi = document.createElement("Marquee");
 //     marqi.innerHTML="This is Created By Khateeb Ur Rehman";
-    function getCurrentTimestamp () {
-  return Date.now()
-}
-// alert();
+   
+//     ================timestamp==========
+    
+//     function getCurrentTimestamp () {
+//   return Date.now()
+// }
+// // alert();
     function addTask(){
         if(inputBox.value === '')
         {
@@ -155,8 +158,8 @@
             let li =document.createElement("li");
             li.innerHTML = inputBox.value;
             listcontainer.appendChild(li);
-            let span1 = document.createElement("span1");
-            span1.innerHTML = getCurrentTimestamp ();
+//             let span1 = document.createElement("span1");
+//             span1.innerHTML = getCurrentTimestamp ();
             let span = document.createElement("span");
             span.innerHTML = '<img src="lg.svg" alt="">';
             // span.innerHTML = '&#xF659';
@@ -181,7 +184,7 @@
         saveData();
         }
     },false);
-    stored task in browser for a some period of time even we refresh page
+//     stored task in browser for a some period of time even we refresh page
 
     function saveData(){
         localStorage.setItem("data", listcontainer.innerHTML);
