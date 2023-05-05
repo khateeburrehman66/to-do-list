@@ -140,8 +140,8 @@
 <script>
     const inputBox = document.getElementById("input-box");
     const listcontainer = document.getElementById("list-container");
-    let marqi = document.createElement("marquee");
-    marqi.innerHTML="This is Created By Khateeb Ur Rehman";
+//     let marqi = document.createElement("Marquee");
+//     marqi.innerHTML="This is Created By Khateeb Ur Rehman";
     function getCurrentTimestamp () {
   return Date.now()
 }
@@ -181,16 +181,16 @@
         saveData();
         }
     },false);
-    // stored task in browser for a some period of time even we refresh page
+    stored task in browser for a some period of time even we refresh page
 
-    // function saveData(){
-    //     localStorage.setItem("data", listcontainer.innerHTML);
+    function saveData(){
+        localStorage.setItem("data", listcontainer.innerHTML);
 
-    // }
-    // function showTask(){
-    //     listcontainer.innerHTML = localStorage.getItem("data");
-    // }
-    // showTask();
+    }
+    function showTask(){
+        listcontainer.innerHTML = localStorage.getItem("data");
+    }
+    showTask();
 </script>
     </body>
 </html>
